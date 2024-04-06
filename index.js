@@ -26,5 +26,5 @@ function csvtojson(url, type) {
             }
         })
 }
-csvtojson(url = "C:/Users/anderson.rodrigues/Documents/filesftp/sale/852917526-sale.csv", "sale");
-csvtojson(url = "C:/Users/anderson.rodrigues/Documents/filesftp/user/852917526-user.csv", "user");
+csvtojson(url = "C:/Users/anderson.rodrigues/Documents/filesftp/852917526-sale.csv", "sale");
+csvtojson(url = "C:/Users/anderson.rodrigues/Documents/filesftp/852917526-company.csv", "company");

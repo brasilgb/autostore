@@ -5,7 +5,8 @@ function csvtojson(url, type) {
 
     const csvFilePath = `${url}` //file path of csv
     csv({
-        delimiter: '|'
+        delimiter: ';',
+        ignoreEmpty: true
     })
         .fromFile(csvFilePath)
         .then(async (jsonObj) => {
@@ -26,5 +27,6 @@ function csvtojson(url, type) {
             }
         })
 }
-csvtojson(url = "C:/Users/anderson.rodrigues/Documents/filesftp/852917526-sale.csv", "sale");
-csvtojson(url = "C:/Users/anderson.rodrigues/Documents/filesftp/852917526-company.csv", "company");
+// csvtojson(url = "/home/anderson/Documentos/Automagico/automagico_assoc.csv", "assoc");
+csvtojson(url = "/home/anderson/Documentos/Automagico/automagico_meta.csv", "meta");
+// csvtojson(url = "/home/anderson/Documentos/Automagico/automagico_venda.csv", "venda");

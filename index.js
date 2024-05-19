@@ -27,6 +27,6 @@ function csvtojson(url, type) {
             }
         })
 }
-// csvtojson(url = "/home/anderson/Documentos/Automagico/automagico_assoc.csv", "assoc");
+csvtojson(url = "/home/anderson/Documentos/Automagico/automagico_assoc.csv", "assoc");
 csvtojson(url = "/home/anderson/Documentos/Automagico/automagico_meta.csv", "meta");
-// csvtojson(url = "/home/anderson/Documentos/Automagico/automagico_venda.csv", "venda");
+csvtojson(url = "/home/anderson/Documentos/Automagico/automagico_venda.csv", "venda");

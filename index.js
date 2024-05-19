@@ -11,7 +11,7 @@ function csvtojson(url, type) {
         .fromFile(csvFilePath)
         .then(async (jsonObj) => {
             try {
-                const response = await axios.post('http://localhost:8000/api/datainsert',
+                const response = await axios.post('https://automagic.megb.com.br/api/datainsert',
                     {
                         Headers: {
                             "Content-Type": "application/json"
@@ -27,6 +27,6 @@ function csvtojson(url, type) {
             }
         })
 }
+csvtojson(url = "/home/anderson/Documentos/Automagico/automagico_vendas.csv", "venda");
 csvtojson(url = "/home/anderson/Documentos/Automagico/automagico_assoc.csv", "assoc");
 csvtojson(url = "/home/anderson/Documentos/Automagico/automagico_meta.csv", "meta");
-csvtojson(url = "/home/anderson/Documentos/Automagico/automagico_venda.csv", "venda");

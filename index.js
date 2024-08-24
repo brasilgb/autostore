@@ -11,13 +11,14 @@ function csvtojson(url, type) {
         .fromFile(csvFilePath)
         .then(async (jsonObj) => {
             try {
-                const response = await axios.post('https://automagic.megb.com.br/api/datainsert',
+                // const response = await axios.post('https://automagic.megb.com.br/api/datainsert',
+                const response = await axios.post('http://localhost:8000/api/datainsert',
                     {
                         Headers: {
                             "Content-Type": "application/json"
                         },
-                            type: type,
-                            dbdata: jsonObj
+                        type: type,
+                        dbdata: jsonObj
                     }
                 );
                 const verostore = response.data.response.message;
@@ -27,6 +28,6 @@ function csvtojson(url, type) {
             }
         })
 }
-csvtojson(url = "/home/anderson/Documentos/Automagico/automagico_vendas.csv", "venda");
-csvtojson(url = "/home/anderson/Documentos/Automagico/automagico_assoc.csv", "assoc");
-csvtojson(url = "/home/anderson/Documentos/Automagico/automagico_meta.csv", "meta");
+csvtojson(url = "automagico_vendas.csv", "venda");
+csvtojson(url = "automagico_assoc.csv", "assoc");
+csvtojson(url = "automagico_meta.csv", "meta");

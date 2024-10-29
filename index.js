@@ -28,6 +28,6 @@ function csvtojson(url, type) {
             }
         })
 }
-csvtojson(url = "automagico_vendas.csv", "venda");
-csvtojson(url = "automagico_assoc.csv", "assoc");
-csvtojson(url = "automagico_meta.csv", "meta");
+csvtojson(url = "./automagico_vendas.csv", "venda");
+csvtojson(url = "./automagico_assoc.csv", "assoc");
+csvtojson(url = "./automagico_total.csv", "total");

@@ -23,7 +23,7 @@ function csvtojson(url, type) {
                         }
                     }
                 );
-                const verostore = response.data.response.message;
+                const verostore = response.data;
                 console.log(verostore);
             } catch (error) {
                 console.log(error);
@@ -32,5 +32,5 @@ function csvtojson(url, type) {
 }
 
 csvtojson(url = "./automagico_vendas.csv", "venda");
-// csvtojson(url = "./automagico_assoc.csv", "assoc");
-// csvtojson(url = "./automagico_total.csv", "total");
+csvtojson(url = "./automagico_assoc.csv", "assoc");
+csvtojson(url = "./automagico_total.csv", "total");

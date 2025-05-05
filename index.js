@@ -26,7 +26,8 @@ function csvtojson(url, type) {
                 const verostore = response.data;
                 console.log(verostore);
             } catch (error) {
-                console.log(error);
+                console.log(error.response.data);
+                console.log(error.response.status);
             }
         })
 }

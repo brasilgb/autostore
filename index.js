@@ -12,7 +12,7 @@ function csvtojson(url, type) {
         .then(async (jsonObj) => {
             try {
                 // const response = await axios.post('https://automagic.megb.com.br/api/datainsert',
-                const response = await axios.post('http://localhost:3000/api/pushdata',
+                const response = await axios.post('http://localhost:8000/api/uploaddata',
                     {
                         Headers: {
                             "Content-Type": "application/json"

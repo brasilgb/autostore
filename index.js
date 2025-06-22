@@ -11,8 +11,8 @@ function csvtojson(url, type) {
         .fromFile(csvFilePath)
         .then(async (jsonObj) => {
             try {
-                // const response = await axios.post('https://automagic.megb.com.br/api/datainsert',
-                const response = await axios.post('http://localhost:8000/api/uploaddata',
+                const response = await axios.post('http://automagico.megb.com.br/api/uploaddata',
+                // const response = await axios.post('http://localhost:8000/api/uploaddata',
                     {
                         Headers: {
                             "Content-Type": "application/json"
